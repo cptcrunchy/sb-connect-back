@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "naics",
+  "info": {
+    "name": "naic"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "naics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.naic"
+    }
+  }
+}
