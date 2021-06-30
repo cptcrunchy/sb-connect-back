@@ -1188,8 +1188,7 @@
         "required": [
           "id",
           "username",
-          "email",
-          "duns"
+          "email"
         ],
         "properties": {
           "id": {
@@ -1346,18 +1345,15 @@
             }
           },
           "isMember": {
-            "type": "boolean"
-          },
-          "duns": {
-            "type": "integer"
+            "type": "boolean",
+            "default": false
           }
         }
       },
       "NewUsersPermissionsUser": {
         "required": [
           "username",
-          "email",
-          "duns"
+          "email"
         ],
         "properties": {
           "username": {
@@ -1420,10 +1416,8 @@
             "type": "string"
           },
           "isMember": {
-            "type": "boolean"
-          },
-          "duns": {
-            "type": "integer"
+            "type": "boolean",
+            "default": false
           },
           "created_by": {
             "type": "string"

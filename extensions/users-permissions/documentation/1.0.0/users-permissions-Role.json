@@ -528,8 +528,7 @@
               "required": [
                 "id",
                 "username",
-                "email",
-                "duns"
+                "email"
               ],
               "properties": {
                 "id": {
@@ -576,9 +575,6 @@
                 },
                 "isMember": {
                   "type": "boolean"
-                },
-                "duns": {
-                  "type": "integer"
                 },
                 "created_by": {
                   "type": "string"
