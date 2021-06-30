@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_naics",
+  "info": {
+    "name": "naic",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "field_id": {
+      "type": "biginteger"
+    },
+    "field_name": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
