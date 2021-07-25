@@ -59,32 +59,27 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "naics": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.naic"
-    },
-    "company_name": {
+    "legalBusinessName": {
       "type": "string"
     },
-    "description": {
+    "statement_of_capability": {
       "type": "richtext"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
     },
     "isMember": {
       "type": "boolean",
       "default": false
+    },
+    "primaryNaics": {
+      "type": "string"
+    },
+    "businessTypeList": {
+      "type": "text"
+    },
+    "naicsList": {
+      "type": "string"
+    },
+    "duns": {
+      "type": "string"
     }
   }
 }

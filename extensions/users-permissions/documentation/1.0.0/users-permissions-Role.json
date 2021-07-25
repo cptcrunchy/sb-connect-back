@@ -561,20 +561,26 @@
                 "role": {
                   "type": "string"
                 },
-                "naics": {
-                  "type": "component"
-                },
-                "company_name": {
+                "legalBusinessName": {
                   "type": "string"
                 },
-                "description": {
-                  "type": "string"
-                },
-                "image": {
+                "statement_of_capability": {
                   "type": "string"
                 },
                 "isMember": {
                   "type": "boolean"
+                },
+                "primaryNaics": {
+                  "type": "string"
+                },
+                "businessTypeList": {
+                  "type": "string"
+                },
+                "naicsList": {
+                  "type": "string"
+                },
+                "duns": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
