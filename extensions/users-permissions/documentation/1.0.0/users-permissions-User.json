@@ -1272,6 +1272,9 @@
           },
           "duns": {
             "type": "string"
+          },
+          "entityURL": {
+            "type": "string"
           }
         }
       },
@@ -1334,6 +1337,9 @@
             "type": "string"
           },
           "duns": {
+            "type": "string"
+          },
+          "entityURL": {
             "type": "string"
           },
           "created_by": {

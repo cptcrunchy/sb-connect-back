@@ -80,6 +80,9 @@
     },
     "duns": {
       "type": "string"
+    },
+    "entityURL": {
+      "type": "string"
     }
   }
 }

@@ -582,6 +582,9 @@
                 "duns": {
                   "type": "string"
                 },
+                "entityURL": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
