@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_entity_informations",
+  "info": {
+    "name": "EntityInformation",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "entityUrl": {
+      "type": "string"
+    },
+    "entityDvisionName": {
+      "type": "string"
+    }
+  }
+}

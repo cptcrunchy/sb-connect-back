@@ -59,9 +59,6 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "legalBusinessName": {
-      "type": "string"
-    },
     "statement_of_capability": {
       "type": "richtext"
     },
@@ -75,14 +72,15 @@
     "businessTypeList": {
       "type": "text"
     },
-    "naicsList": {
-      "type": "string"
+    "entityRegistration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.entity-registration"
     },
-    "duns": {
-      "type": "string"
-    },
-    "entityURL": {
-      "type": "string"
+    "NaicsList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.naic"
     }
   }
 }

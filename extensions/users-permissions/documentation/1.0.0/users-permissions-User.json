@@ -1251,9 +1251,6 @@
               }
             }
           },
-          "legalBusinessName": {
-            "type": "string"
-          },
           "statement_of_capability": {
             "type": "string"
           },
@@ -1267,14 +1264,81 @@
           "businessTypeList": {
             "type": "string"
           },
-          "naicsList": {
-            "type": "string"
+          "entityRegistration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "ueiSAM": {
+                "type": "string"
+              },
+              "ueiDUNS": {
+                "type": "string"
+              },
+              "cageCode": {
+                "type": "string"
+              },
+              "legalBusinessName": {
+                "type": "string"
+              },
+              "dbaName": {
+                "type": "string"
+              },
+              "purposeOfRegistrationCode": {
+                "type": "string"
+              },
+              "purposeOfRegistrationDesc": {
+                "type": "string"
+              },
+              "registrationStatus": {
+                "type": "string"
+              },
+              "registrationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "lastUpdateDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "expirationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "noPublicDisplayFlag": {
+                "type": "boolean"
+              },
+              "exclusionStatusFlag": {
+                "type": "boolean"
+              },
+              "exclusionUrl": {
+                "type": "string"
+              }
+            }
           },
-          "duns": {
-            "type": "string"
-          },
-          "entityURL": {
-            "type": "string"
+          "NaicsList": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "field_id": {
+                  "type": "integer"
+                },
+                "field_name": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1317,9 +1381,6 @@
           "role": {
             "type": "string"
           },
-          "legalBusinessName": {
-            "type": "string"
-          },
           "statement_of_capability": {
             "type": "string"
           },
@@ -1333,14 +1394,81 @@
           "businessTypeList": {
             "type": "string"
           },
-          "naicsList": {
-            "type": "string"
+          "entityRegistration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "ueiSAM": {
+                "type": "string"
+              },
+              "ueiDUNS": {
+                "type": "string"
+              },
+              "cageCode": {
+                "type": "string"
+              },
+              "legalBusinessName": {
+                "type": "string"
+              },
+              "dbaName": {
+                "type": "string"
+              },
+              "purposeOfRegistrationCode": {
+                "type": "string"
+              },
+              "purposeOfRegistrationDesc": {
+                "type": "string"
+              },
+              "registrationStatus": {
+                "type": "string"
+              },
+              "registrationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "lastUpdateDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "expirationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "noPublicDisplayFlag": {
+                "type": "boolean"
+              },
+              "exclusionStatusFlag": {
+                "type": "boolean"
+              },
+              "exclusionUrl": {
+                "type": "string"
+              }
+            }
           },
-          "duns": {
-            "type": "string"
-          },
-          "entityURL": {
-            "type": "string"
+          "NaicsList": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "field_id": {
+                  "type": "integer"
+                },
+                "field_name": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "created_by": {
             "type": "string"

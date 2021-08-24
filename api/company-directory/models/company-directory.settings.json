@@ -1,0 +1,15 @@
+{
+  "kind": "collectionType",
+  "collectionName": "company_directories",
+  "info": {
+    "name": "Company Directory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {}
+}
