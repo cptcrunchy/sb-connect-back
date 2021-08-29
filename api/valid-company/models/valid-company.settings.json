@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "valid_companies",
+  "info": {
+    "name": "validCompany",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "onSamGov": {
+      "type": "boolean",
+      "default": false,
+      "unique": false
+    },
+    "registeredEmail": {
+      "type": "email"
+    }
+  }
+}
