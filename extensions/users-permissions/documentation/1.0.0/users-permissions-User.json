@@ -1331,10 +1331,16 @@
                 "id": {
                   "type": "string"
                 },
-                "field_id": {
+                "naics_Code": {
                   "type": "integer"
                 },
-                "field_name": {
+                "naics_Description": {
+                  "type": "string"
+                },
+                "SbaSmallBusiness": {
+                  "type": "boolean"
+                },
+                "NaicsException": {
                   "type": "string"
                 }
               }
@@ -1461,10 +1467,16 @@
                 "id": {
                   "type": "string"
                 },
-                "field_id": {
+                "naics_Code": {
                   "type": "integer"
                 },
-                "field_name": {
+                "naics_Description": {
+                  "type": "string"
+                },
+                "SbaSmallBusiness": {
+                  "type": "boolean"
+                },
+                "NaicsException": {
                   "type": "string"
                 }
               }
