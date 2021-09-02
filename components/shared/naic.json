@@ -1,17 +1,24 @@
 {
   "collectionName": "components_shared_naics",
   "info": {
-    "name": "naic",
-    "icon": "address-card"
+    "name": "Naics",
+    "icon": "address-card",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "field_id": {
+    "naics_Code": {
       "type": "biginteger"
     },
-    "field_name": {
+    "naics_Description": {
       "type": "string",
       "required": false
+    },
+    "SbaSmallBusiness": {
+      "type": "boolean"
+    },
+    "NaicsException": {
+      "type": "string"
     }
   }
 }

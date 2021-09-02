@@ -1,0 +1,43 @@
+{
+    "collectionName": "components_shared_business_pocs",
+    "info": {
+      "name": "BusinessPoc",
+      "icon": "asterisk"
+    },
+    "options": {},
+    "attributes": {
+      "FirstName": {
+        "type": "string"
+      },
+      "MiddleInitial": {
+        "type": "string"
+      },
+      "LastName": {
+        "type": "string"
+      },
+      "Title": {
+        "type": "string"
+      },
+      "USPhone": {
+        "type": "biginteger"
+      },
+      "USPhoneExtension": {
+        "type": "integer"
+      },
+      "NonUSPhone": {
+        "type": "biginteger"
+      },
+      "Fax": {
+        "type": "biginteger"
+      },
+      "Email": {
+        "type": "email"
+      },
+      "BusinessPocAddress": {
+        "type": "component",
+        "repeatable": false,
+        "component": "shared.physical-address"
+      }
+    }
+  }
+  

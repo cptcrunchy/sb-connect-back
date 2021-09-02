@@ -1,0 +1,10 @@
+{
+  "collectionName": "components_shared_business_types",
+  "info": {
+    "name": "BusinessType",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {}
+}
