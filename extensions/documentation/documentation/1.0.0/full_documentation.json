@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/06/2021 2:52:19 PM"
+    "x-generation-date": "09/06/2021 4:05:59 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -31,7 +31,7 @@
       "description": "Staging server"
     },
     {
-      "url": "https://sb-connect-back-strapi.herokuapp.com",
+      "url": "YOUR_PRODUCTION_SERVER",
       "description": "Production server"
     }
   ],
@@ -831,7 +831,7 @@
     "/contract-opportunities/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of contract-opportunities documents",
+        "description": "Retrieve the number of contract-opportunities documents",
         "responses": {
           "200": {
             "description": "Retrieve contract-opportunities document(s)",

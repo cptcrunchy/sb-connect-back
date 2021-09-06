@@ -262,7 +262,7 @@
     "/contract-opportunities/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of contract-opportunities documents",
+        "description": "Retrieve the number of contract-opportunities documents",
         "responses": {
           "200": {
             "description": "Retrieve contract-opportunities document(s)",
