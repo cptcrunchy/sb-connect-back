@@ -90,6 +90,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.business-type"
+    },
+    "partner_ids": {
+      "collection": "partners",
+      "via": "requestorId",
+      "dominant": true
     }
   }
 }

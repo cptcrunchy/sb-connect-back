@@ -1520,6 +1520,40 @@
                 }
               }
             }
+          },
+          "partner_ids": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "partnerId": {
+                  "type": "string"
+                },
+                "isApproved": {
+                  "type": "boolean"
+                },
+                "requestorId": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1830,6 +1864,12 @@
                   "type": "string"
                 }
               }
+            }
+          },
+          "partner_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
             }
           },
           "created_by": {

@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "partners",
+  "info": {
+    "name": "Partner",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "partnerId": {
+      "type": "string"
+    },
+    "isApproved": {
+      "type": "boolean"
+    },
+    "requestorId": {
+      "via": "partner_ids",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}
