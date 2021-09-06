@@ -567,16 +567,19 @@
                 "isMember": {
                   "type": "boolean"
                 },
-                "primaryNaics": {
-                  "type": "string"
-                },
-                "businessTypeList": {
-                  "type": "string"
-                },
                 "entityRegistration": {
                   "type": "component"
                 },
                 "NaicsList": {
+                  "type": "component"
+                },
+                "GovernmentContact": {
+                  "type": "component"
+                },
+                "BusinessContact": {
+                  "type": "component"
+                },
+                "BusinessTypeList": {
                   "type": "component"
                 },
                 "created_by": {

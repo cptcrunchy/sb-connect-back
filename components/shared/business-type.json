@@ -6,5 +6,12 @@
     "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "BusinessTypeCode": {
+      "type": "string"
+    },
+    "BusinessTypeDescription": {
+      "type": "string"
+    }
+  }
 }

@@ -66,12 +66,6 @@
       "type": "boolean",
       "default": false
     },
-    "primaryNaics": {
-      "type": "string"
-    },
-    "businessTypeList": {
-      "type": "text"
-    },
     "entityRegistration": {
       "type": "component",
       "repeatable": false,
@@ -81,6 +75,21 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.naic"
+    },
+    "GovernmentContact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.government-poc"
+    },
+    "BusinessContact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.business-poc"
+    },
+    "BusinessTypeList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.business-type"
     }
   }
 }
