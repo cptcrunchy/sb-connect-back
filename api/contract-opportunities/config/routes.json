@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/contract-opportunities",
+      "handler": "contract-opportunities.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contract-opportunities/count",
+      "handler": "contract-opportunities.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/contract-opportunities/:id",
+      "handler": "contract-opportunities.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/contract-opportunities",
+      "handler": "contract-opportunities.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/contract-opportunities/:id",
+      "handler": "contract-opportunities.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/contract-opportunities/:id",
+      "handler": "contract-opportunities.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

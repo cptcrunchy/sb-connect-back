@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contract_opportunities",
+  "info": {
+    "name": "Contract Opportunities",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contractExpiration": {
+      "type": "datetime"
+    }
+  }
+}
