@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_contract_descriptions",
+  "info": {
+    "name": "ContractDescription",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "lastModifiedDate": {
+      "type": "datetime"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

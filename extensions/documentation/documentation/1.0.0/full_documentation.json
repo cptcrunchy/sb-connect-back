@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/10/2021 9:31:57 AM"
+    "x-generation-date": "09/10/2021 1:53:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4423,10 +4423,161 @@
           "id": {
             "type": "string"
           },
+          "isCanceled": {
+            "type": "boolean"
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
           "title": {
             "type": "string"
           },
-          "contractExpiration": {
+          "type": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          },
+          "descriptions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "lastModifiedDate": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "content": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "solicitationNumber": {
+            "type": "string"
+          },
+          "responseDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "parentNoticeId": {
+            "type": "string"
+          },
+          "award": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "awardee": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "duns": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "responseTimeZone": {
+            "type": "string"
+          },
+          "modifiedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "organizationHierarchy": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "organizationId": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "zip": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "streetAddress": {
+                      "type": "string"
+                    },
+                    "streetAddress2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "level": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "responseDateActual": {
             "type": "string",
             "format": "date-time"
           },
@@ -4438,10 +4589,161 @@
       },
       "NewContract-opportunities": {
         "properties": {
+          "isCanceled": {
+            "type": "boolean"
+          },
+          "publishDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "isActive": {
+            "type": "boolean"
+          },
           "title": {
             "type": "string"
           },
-          "contractExpiration": {
+          "type": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "code": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              }
+            }
+          },
+          "descriptions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "lastModifiedDate": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "content": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "solicitationNumber": {
+            "type": "string"
+          },
+          "responseDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "parentNoticeId": {
+            "type": "string"
+          },
+          "award": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "awardee": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "duns": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "responseTimeZone": {
+            "type": "string"
+          },
+          "modifiedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "organizationHierarchy": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "organizationId": {
+                  "type": "string"
+                },
+                "address": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "zip": {
+                      "type": "string"
+                    },
+                    "country": {
+                      "type": "string"
+                    },
+                    "city": {
+                      "type": "string"
+                    },
+                    "streetAddress": {
+                      "type": "string"
+                    },
+                    "streetAddress2": {
+                      "type": "string"
+                    },
+                    "state": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "level": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "responseDateActual": {
             "type": "string",
             "format": "date-time"
           },

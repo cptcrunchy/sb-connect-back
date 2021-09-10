@@ -12,10 +12,54 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "isCanceled": {
+      "type": "boolean"
+    },
+    "publishDate": {
+      "type": "datetime"
+    },
+    "isActive": {
+      "type": "boolean"
+    },
     "title": {
       "type": "string"
     },
-    "contractExpiration": {
+    "type": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.contract-type"
+    },
+    "descriptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.contract-description"
+    },
+    "solicitationNumber": {
+      "type": "string"
+    },
+    "responseDate": {
+      "type": "datetime"
+    },
+    "parentNoticeId": {
+      "type": "string"
+    },
+    "award": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.award"
+    },
+    "responseTimeZone": {
+      "type": "string"
+    },
+    "modifiedDate": {
+      "type": "datetime"
+    },
+    "organizationHierarchy": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.organization"
+    },
+    "responseDateActual": {
       "type": "datetime"
     }
   }
