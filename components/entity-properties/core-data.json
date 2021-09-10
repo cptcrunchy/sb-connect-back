@@ -32,7 +32,7 @@
     },
     "businessTypes": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "shared.business-types"
     }
   }

@@ -46,7 +46,7 @@
     "exclusionStatusFlag": {
       "type": "string"
     },
-    "exclusionUrl": {
+    "exclusionURL": {
       "type": "string"
     }
   }

@@ -72,7 +72,8 @@
       "dominant": true
     },
     "entity": {
-      "model": "entity"
+      "model": "entity",
+      "via": "user"
     }
   }
 }

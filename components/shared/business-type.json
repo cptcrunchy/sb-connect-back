@@ -10,7 +10,7 @@
     "businessTypeCode": {
       "type": "string"
     },
-    "businessTypeDescription": {
+    "businessTypeDesc": {
       "type": "string"
     }
   }

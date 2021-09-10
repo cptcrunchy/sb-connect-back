@@ -7,17 +7,17 @@
   },
   "options": {},
   "attributes": {
-    "naics_Code": {
+    "naicsCode": {
       "type": "biginteger"
     },
-    "naics_Description": {
+    "naicsDescription": {
       "type": "string",
       "required": false
     },
-    "SbaSmallBusiness": {
-      "type": "boolean"
+    "sbaSmallBusiness": {
+      "type": "string"
     },
-    "NaicsException": {
+    "naicsException": {
       "type": "string"
     }
   }

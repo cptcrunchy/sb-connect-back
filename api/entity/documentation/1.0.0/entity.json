@@ -573,7 +573,7 @@
               "exclusionStatusFlag": {
                 "type": "string"
               },
-              "exclusionUrl": {
+              "exclusionURL": {
                 "type": "string"
               }
             }
@@ -837,61 +837,58 @@
                 }
               },
               "businessTypes": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "businessTypeList": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "businessTypeCode": {
-                            "type": "string"
-                          },
-                          "businessTypeDescription": {
-                            "type": "string"
-                          }
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "businessTypeList": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "businessTypeCode": {
+                          "type": "string"
+                        },
+                        "businessTypeDesc": {
+                          "type": "string"
                         }
                       }
-                    },
-                    "sbaBusinessTypeList": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "sbaBusinessTypeCode": {
-                            "type": "string"
-                          },
-                          "sbaBusinessTypeDesc": {
-                            "type": "string"
-                          },
-                          "certificationEntryDate": {
-                            "type": "string",
-                            "format": "date"
-                          },
-                          "certificationExitDate": {
-                            "type": "string",
-                            "format": "date"
-                          }
+                    }
+                  },
+                  "sbaBusinessTypeList": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "sbaBusinessTypeCode": {
+                          "type": "string"
+                        },
+                        "sbaBusinessTypeDesc": {
+                          "type": "string"
+                        },
+                        "certificationEntryDate": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "certificationExitDate": {
+                          "type": "string",
+                          "format": "date"
                         }
                       }
                     }
@@ -932,16 +929,16 @@
                         "id": {
                           "type": "string"
                         },
-                        "naics_Code": {
+                        "naicsCode": {
                           "type": "integer"
                         },
-                        "naics_Description": {
+                        "naicsDescription": {
                           "type": "string"
                         },
-                        "SbaSmallBusiness": {
-                          "type": "boolean"
+                        "sbaSmallBusiness": {
+                          "type": "string"
                         },
-                        "NaicsException": {
+                        "naicsException": {
                           "type": "string"
                         }
                       }
@@ -980,16 +977,16 @@
                         "type": "string"
                       },
                       "usPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "usPhoneExtension": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "nonUSPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "fax": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "email": {
                         "type": "string"
@@ -1092,16 +1089,16 @@
                         "type": "string"
                       },
                       "usPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "usPhoneExtension": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "nonUSPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "fax": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "email": {
                         "type": "string"
@@ -1183,6 +1180,66 @@
                     }
                   }
                 }
+              }
+            }
+          },
+          "user": {
+            "required": [
+              "id",
+              "username",
+              "email"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "username": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "password": {
+                "type": "string"
+              },
+              "resetPasswordToken": {
+                "type": "string"
+              },
+              "confirmationToken": {
+                "type": "string"
+              },
+              "confirmed": {
+                "type": "boolean"
+              },
+              "blocked": {
+                "type": "boolean"
+              },
+              "role": {
+                "type": "string"
+              },
+              "statement_of_capability": {
+                "type": "string"
+              },
+              "isMember": {
+                "type": "boolean"
+              },
+              "partner_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "entity": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           },
@@ -1245,7 +1302,7 @@
               "exclusionStatusFlag": {
                 "type": "string"
               },
-              "exclusionUrl": {
+              "exclusionURL": {
                 "type": "string"
               }
             }
@@ -1509,61 +1566,58 @@
                 }
               },
               "businessTypes": {
-                "type": "array",
-                "items": {
-                  "type": "object",
-                  "required": [
-                    "id"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "businessTypeList": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "businessTypeCode": {
-                            "type": "string"
-                          },
-                          "businessTypeDescription": {
-                            "type": "string"
-                          }
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "businessTypeList": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "businessTypeCode": {
+                          "type": "string"
+                        },
+                        "businessTypeDesc": {
+                          "type": "string"
                         }
                       }
-                    },
-                    "sbaBusinessTypeList": {
-                      "type": "array",
-                      "items": {
-                        "type": "object",
-                        "required": [
-                          "id"
-                        ],
-                        "properties": {
-                          "id": {
-                            "type": "string"
-                          },
-                          "sbaBusinessTypeCode": {
-                            "type": "string"
-                          },
-                          "sbaBusinessTypeDesc": {
-                            "type": "string"
-                          },
-                          "certificationEntryDate": {
-                            "type": "string",
-                            "format": "date"
-                          },
-                          "certificationExitDate": {
-                            "type": "string",
-                            "format": "date"
-                          }
+                    }
+                  },
+                  "sbaBusinessTypeList": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "sbaBusinessTypeCode": {
+                          "type": "string"
+                        },
+                        "sbaBusinessTypeDesc": {
+                          "type": "string"
+                        },
+                        "certificationEntryDate": {
+                          "type": "string",
+                          "format": "date"
+                        },
+                        "certificationExitDate": {
+                          "type": "string",
+                          "format": "date"
                         }
                       }
                     }
@@ -1604,16 +1658,16 @@
                         "id": {
                           "type": "string"
                         },
-                        "naics_Code": {
+                        "naicsCode": {
                           "type": "integer"
                         },
-                        "naics_Description": {
+                        "naicsDescription": {
                           "type": "string"
                         },
-                        "SbaSmallBusiness": {
-                          "type": "boolean"
+                        "sbaSmallBusiness": {
+                          "type": "string"
                         },
-                        "NaicsException": {
+                        "naicsException": {
                           "type": "string"
                         }
                       }
@@ -1652,16 +1706,16 @@
                         "type": "string"
                       },
                       "usPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "usPhoneExtension": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "nonUSPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "fax": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "email": {
                         "type": "string"
@@ -1764,16 +1818,16 @@
                         "type": "string"
                       },
                       "usPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "usPhoneExtension": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "nonUSPhone": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "fax": {
-                        "type": "integer"
+                        "type": "string"
                       },
                       "email": {
                         "type": "string"
@@ -1857,6 +1911,9 @@
                 }
               }
             }
+          },
+          "user": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

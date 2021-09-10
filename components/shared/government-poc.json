@@ -20,16 +20,16 @@
       "type": "string"
     },
     "usPhone": {
-      "type": "biginteger"
+      "type": "string"
     },
     "usPhoneExtension": {
-      "type": "integer"
+      "type": "string"
     },
     "nonUSPhone": {
-      "type": "biginteger"
+      "type": "string"
     },
     "fax": {
-      "type": "biginteger"
+      "type": "string"
     },
     "email": {
       "type": "email"

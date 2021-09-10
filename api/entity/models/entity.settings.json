@@ -26,6 +26,11 @@
       "type": "component",
       "repeatable": false,
       "component": "entity-properties.assertions"
+    },
+    "user": {
+      "via": "entity",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }

@@ -1309,6 +1309,9 @@
               "assertions": {
                 "type": "component"
               },
+              "user": {
+                "type": "string"
+              },
               "published_at": {
                 "type": "string"
               },
