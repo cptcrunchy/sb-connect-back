@@ -1,21 +1,22 @@
 {
   "collectionName": "components_shared_physical_addresses",
   "info": {
-    "name": "PhysicalAddress",
-    "icon": "align-justify"
+    "name": "Address",
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "AddressLine1": {
+    "addressLine1": {
       "type": "string"
     },
-    "AddressLine2": {
+    "addressLine2": {
       "type": "string"
     },
-    "City": {
+    "city": {
       "type": "string"
     },
-    "State": {
+    "stateOrProvinceCode": {
       "type": "enumeration",
       "enum": [
         "AL",
@@ -71,14 +72,14 @@
         "WY"
       ]
     },
-    "Zipcode": {
-      "type": "integer"
+    "zipCode": {
+      "type": "string"
     },
-    "Country": {
-      "type": "enumeration",
-      "enum": [
-        "USA"
-      ]
+    "zipCodePlus4": {
+      "type": "string"
+    },
+    "countryCode": {
+      "type": "string"
     }
   }
 }

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_entity_informations",
+  "info": {
+    "name": "EntityInformation",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "entityURL": {
+      "type": "string"
+    },
+    "entityDivisionName": {
+      "type": "string"
+    },
+    "entityDivisionNumber": {
+      "type": "string"
+    },
+    "entityStartDate": {
+      "type": "string"
+    },
+    "fiscalYearEndCloseDate": {
+      "type": "string"
+    },
+    "submissionDate": {
+      "type": "string"
+    }
+  }
+}

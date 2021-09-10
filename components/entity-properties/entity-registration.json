@@ -2,7 +2,8 @@
   "collectionName": "components_shared_entity_registrations",
   "info": {
     "name": "EntityRegistration",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -40,10 +41,10 @@
       "type": "date"
     },
     "noPublicDisplayFlag": {
-      "type": "boolean"
+      "type": "string"
     },
     "exclusionStatusFlag": {
-      "type": "boolean"
+      "type": "string"
     },
     "exclusionUrl": {
       "type": "string"

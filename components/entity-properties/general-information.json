@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_entity_properties_general_informations",
+  "info": {
+    "name": "generalInformation",
+    "icon": "award"
+  },
+  "options": {},
+  "attributes": {
+    "entityStructureCode": {
+      "type": "string"
+    },
+    "entityStructureDesc": {
+      "type": "string"
+    },
+    "entityTypeCode": {
+      "type": "string"
+    },
+    "entityTypeDesc": {
+      "type": "string"
+    },
+    "profitStructureCode": {
+      "type": "string"
+    },
+    "profitStructureDesc": {
+      "type": "string"
+    },
+    "organizationStructureCode": {
+      "type": "string"
+    },
+    "organizationStructureDesc": {
+      "type": "string"
+    },
+    "stateOfIncorporationCode": {
+      "type": "string"
+    },
+    "stateOfIncorporationDesc": {
+      "type": "string"
+    },
+    "countryOfIncorporationCode": {
+      "type": "string"
+    },
+    "countryOfIncorporationDesc": {
+      "type": "string"
+    }
+  }
+}

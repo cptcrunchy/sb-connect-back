@@ -257,7 +257,7 @@
     "/partners/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of partners documents",
+        "description": "Retrieve the numver of partners documents",
         "responses": {
           "200": {
             "description": "Retrieve partners document(s)",
@@ -573,26 +573,14 @@
                 "isMember": {
                   "type": "boolean"
                 },
-                "entityRegistration": {
-                  "type": "component"
-                },
-                "NaicsList": {
-                  "type": "component"
-                },
-                "GovernmentContact": {
-                  "type": "component"
-                },
-                "BusinessContact": {
-                  "type": "component"
-                },
-                "BusinessTypeList": {
-                  "type": "component"
-                },
                 "partner_ids": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "entity": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

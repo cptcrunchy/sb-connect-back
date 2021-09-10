@@ -7,10 +7,10 @@
   },
   "options": {},
   "attributes": {
-    "BusinessTypeCode": {
+    "businessTypeCode": {
       "type": "string"
     },
-    "BusinessTypeDescription": {
+    "businessTypeDescription": {
       "type": "string"
     }
   }

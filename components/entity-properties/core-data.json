@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_entity_properties_core_data",
+  "info": {
+    "name": "coreData",
+    "icon": "atom",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "entityInformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entity-properties.entity-information"
+    },
+    "physicalAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.physical-address"
+    },
+    "mailingAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.physical-address"
+    },
+    "congressionalDistrict": {
+      "type": "string"
+    },
+    "generalInformation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entity-properties.general-information"
+    },
+    "businessTypes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.business-types"
+    }
+  }
+}

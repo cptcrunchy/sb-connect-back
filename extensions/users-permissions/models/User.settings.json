@@ -66,35 +66,13 @@
       "type": "boolean",
       "default": false
     },
-    "entityRegistration": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.entity-registration"
-    },
-    "NaicsList": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.naic"
-    },
-    "GovernmentContact": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.government-poc"
-    },
-    "BusinessContact": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.business-poc"
-    },
-    "BusinessTypeList": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.business-type"
-    },
     "partner_ids": {
       "collection": "partners",
       "via": "requestorId",
       "dominant": true
+    },
+    "entity": {
+      "model": "entity"
     }
   }
 }

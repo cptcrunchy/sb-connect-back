@@ -1,0 +1,227 @@
+{
+  "entityRegistration": {
+    "ueiSAM": "XE8LEMK77DC9",
+    "ueiDUNS": "080446911",
+    "entityEFTIndicator": null,
+    "cageCode": "7RFJ7",
+    "dodaac": null,
+    "legalBusinessName": "Spatialgis, L.L.C.",
+    "dbaName": "Spatial Gis Services",
+    "purposeOfRegistrationCode": "Z2",
+    "purposeOfRegistrationDesc": "All Awards",
+    "registrationStatus": "Active",
+    "registrationDate": "2016-11-28",
+    "lastUpdateDate": "2020-10-16",
+    "expirationDate": "2021-10-14",
+    "activationDate": "2020-10-16",
+    "noPublicDisplayFlag": "Y",
+    "exclusionStatusFlag": null,
+    "exclusionURL": null
+  },
+  "coreData": {
+    "entityInformation": {
+      "entityURL": "www.spatialgisservices.com",
+      "entityDivisionName": null,
+      "entityDivisionNumber": null,
+      "entityStartDate": "2016-11-18",
+      "fiscalYearEndCloseDate": "12/31",
+      "submissionDate": "2020-10-14"
+    },
+    "physicalAddress": {
+      "addressLine1": "2004 Kintore Cir Apt 102",
+      "addressLine2": null,
+      "city": "Odenton",
+      "stateOrProvinceCode": "MD",
+      "zipCode": "21113",
+      "zipCodePlus4": "4619",
+      "countryCode": "USA"
+    },
+    "mailingAddress": {
+      "addressLine1": "2288 Blue Water Blvd",
+      "addressLine2": "Suite 310",
+      "city": "Odenton",
+      "stateOrProvinceCode": "MD",
+      "zipCode": "21113",
+      "zipCodePlus4": null,
+      "countryCode": "USA"
+    },
+    "congressionalDistrict": "02",
+    "generalInformation": {
+      "entityStructureCode": "2L",
+      "entityStructureDesc": "Corporate Entity (Not Tax Exempt)",
+      "entityTypeCode": "F",
+      "entityTypeDesc": "Business or Organization",
+      "profitStructureCode": "2X",
+      "profitStructureDesc": "For Profit Organization",
+      "organizationStructureCode": "LJ",
+      "organizationStructureDesc": "Limited Liability Company",
+      "stateOfIncorporationCode": "MD",
+      "stateOfIncorporationDesc": "MARYLAND",
+      "countryOfIncorporationCode": "USA",
+      "countryOfIncorporationDesc": "UNITED STATES"
+    },
+    "businessTypes": {
+      "businessTypeList": [
+        {
+          "businessTypeCode": "23",
+          "businessTypeDesc": "Minority Owned Business"
+        },
+        {
+          "businessTypeCode": "27",
+          "businessTypeDesc": "Self Certified Small Disadvantaged Business"
+        },
+        {
+          "businessTypeCode": "2X",
+          "businessTypeDesc": "For Profit Organization"
+        },
+        {
+          "businessTypeCode": "F",
+          "businessTypeDesc": "Business or Organization"
+        },
+        {
+          "businessTypeCode": "HQ",
+          "businessTypeDesc": "DOT Certified DBE"
+        },
+        {
+          "businessTypeCode": "LJ",
+          "businessTypeDesc": "Limited Liability Company"
+        },
+        {
+          "businessTypeCode": "OY",
+          "businessTypeDesc": "Black American Owned"
+        }
+      ],
+      "sbaBusinessTypeList": [
+        {
+          "sbaBusinessTypeCode": null,
+          "sbaBusinessTypeDesc": null,
+          "certificationEntryDate": null,
+          "certificationExitDate": null
+        }
+      ]
+    }
+  },
+  "assertions": {
+    "goodsAndServices": {
+      "primaryNaics": "541370",
+      "naicsList": [
+        {
+          "naicsCode": "518210",
+          "naicsDescription": "Data Processing, Hosting, and Related Services",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541360",
+          "naicsDescription": "Geophysical Surveying and Mapping Services",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541370",
+          "naicsDescription": "Surveying and Mapping (except Geophysical) Services",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541430",
+          "naicsDescription": "Graphic Design Services",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541511",
+          "naicsDescription": "Custom Computer Programming Services ",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541519",
+          "naicsDescription": "Other Computer Related Services",
+          "sbaSmallBusiness": "E",
+          "naicsException": "YY"
+        },
+        {
+          "naicsCode": "541611",
+          "naicsDescription": "Administrative Management and General Management Consulting Services ",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541618",
+          "naicsDescription": "Other Management Consulting Services ",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541690",
+          "naicsDescription": "Other Scientific and Technical Consulting Services",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541713",
+          "naicsDescription": "Research and Development in Nanotechnology ",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "541990",
+          "naicsDescription": "All Other Professional, Scientific, and Technical Services",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "611420",
+          "naicsDescription": "Computer Training ",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        },
+        {
+          "naicsCode": "611430",
+          "naicsDescription": "Professional and Management Development Training ",
+          "sbaSmallBusiness": "Y",
+          "naicsException": null
+        }
+      ]
+    },
+    "pointsOfContact": {
+      "governmentBusinessPOC": {
+        "firstName": "Kendrick",
+        "middleInitial": null,
+        "lastName": "Faison",
+        "title": "President",
+        "usPhone": "FOUO Only",
+        "usPhoneExtension": "FOUO Only",
+        "nonUSPhone": "FOUO Only",
+        "fax": "FOUO Only",
+        "email": "FOUO Only",
+        "addressLine1": "2288 Blue Water",
+        "addressLine2": "Ste 310",
+        "city": "Odenton",
+        "stateOrProvinceCode": "MD",
+        "zipCode": "21113",
+        "zipCodePlus4": null,
+        "countryCode": "USA"
+      },
+      "electronicBusinessPOC": {
+        "firstName": "Kendrick",
+        "middleInitial": null,
+        "lastName": "Faison",
+        "title": "President",
+        "usPhone": "FOUO Only",
+        "usPhoneExtension": "FOUO Only",
+        "nonUSPhone": "FOUO Only",
+        "fax": "FOUO Only",
+        "email": "FOUO Only",
+        "addressLine1": "2288 Blue Water Blvd",
+        "addressLine2": "Ste 310",
+        "city": "Odenton",
+        "stateOrProvinceCode": "MD",
+        "zipCode": "21113",
+        "zipCodePlus4": null,
+        "countryCode": "USA"
+      }
+    }
+  }
+}

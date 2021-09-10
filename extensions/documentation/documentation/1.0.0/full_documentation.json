@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/06/2021 4:50:15 PM"
+    "x-generation-date": "09/09/2021 8:08:13 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -45,530 +45,6 @@
     }
   ],
   "paths": {
-    "/company-directories": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Company-directory"
-        ],
-        "parameters": [
-          {
-            "name": "_limit",
-            "in": "query",
-            "required": false,
-            "description": "Maximum number of results possible",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_sort",
-            "in": "query",
-            "required": false,
-            "description": "Sort according to a specific field.",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_start",
-            "in": "query",
-            "required": false,
-            "description": "Skip a specific number of entries (especially useful for pagination)",
-            "schema": {
-              "type": "integer"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "=",
-            "in": "query",
-            "required": false,
-            "description": "Get entries that matches exactly your input",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_ne",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are not equals to something",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lt",
-            "in": "query",
-            "required": false,
-            "description": "Get record that are lower than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_lte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are lower than or equal to a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gt",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_gte",
-            "in": "query",
-            "required": false,
-            "description": "Get records that are greater than  or equal a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_contains",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_containss",
-            "in": "query",
-            "required": false,
-            "description": "Get records that contains (case sensitive) a value",
-            "schema": {
-              "type": "string"
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_in",
-            "in": "query",
-            "required": false,
-            "description": "Get records that matches any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          },
-          {
-            "name": "_nin",
-            "in": "query",
-            "required": false,
-            "description": "Get records that doesn't match any value in the array of values",
-            "schema": {
-              "type": "array",
-              "items": {
-                "type": "string"
-              }
-            },
-            "deprecated": false
-          }
-        ]
-      },
-      "post": {
-        "deprecated": false,
-        "description": "Create a new record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Company-directory"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewCompany-directory"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/company-directories/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Company-directory"
-        ],
-        "parameters": []
-      }
-    },
-    "/company-directories/{id}": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Company-directory"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "put": {
-        "deprecated": false,
-        "description": "Update a record",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Company-directory"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewCompany-directory"
-              }
-            }
-          }
-        },
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      },
-      "delete": {
-        "deprecated": false,
-        "description": "Delete a record",
-        "responses": {
-          "200": {
-            "description": "deletes a single record based on the ID supplied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "integer",
-                  "format": "int64"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Company-directory"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
     "/contract-opportunities": {
       "get": {
         "deprecated": false,
@@ -831,7 +307,7 @@
     "/contract-opportunities/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of contract-opportunities documents",
+        "description": "Retrieve the numver of contract-opportunities documents",
         "responses": {
           "200": {
             "description": "Retrieve contract-opportunities document(s)",
@@ -1078,6 +554,517 @@
         "summary": "",
         "tags": [
           "Contract-opportunities"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    },
+    "/entities": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Entity"
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Entity"
+        ],
+        "parameters": [
+          {
+            "name": "_limit",
+            "in": "query",
+            "required": false,
+            "description": "Maximum number of results possible",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_sort",
+            "in": "query",
+            "required": false,
+            "description": "Sort according to a specific field.",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_start",
+            "in": "query",
+            "required": false,
+            "description": "Skip a specific number of entries (especially useful for pagination)",
+            "schema": {
+              "type": "integer"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "=",
+            "in": "query",
+            "required": false,
+            "description": "Get entries that matches exactly your input",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_ne",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are not equals to something",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lt",
+            "in": "query",
+            "required": false,
+            "description": "Get record that are lower than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_lte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are lower than or equal to a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gt",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_gte",
+            "in": "query",
+            "required": false,
+            "description": "Get records that are greater than  or equal a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_contains",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_containss",
+            "in": "query",
+            "required": false,
+            "description": "Get records that contains (case sensitive) a value",
+            "schema": {
+              "type": "string"
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_in",
+            "in": "query",
+            "required": false,
+            "description": "Get records that matches any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          },
+          {
+            "name": "_nin",
+            "in": "query",
+            "required": false,
+            "description": "Get records that doesn't match any value in the array of values",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "deprecated": false
+          }
+        ]
+      },
+      "post": {
+        "deprecated": false,
+        "description": "Create a new record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Entity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Entity"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewEntity"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/entities/count": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "count": {
+                      "type": "integer"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Entity"
+        ],
+        "parameters": []
+      }
+    },
+    "/entities/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Entity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Entity"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "put": {
+        "deprecated": false,
+        "description": "Update a record",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Entity"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Entity"
+        ],
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewEntity"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "",
+            "deprecated": false,
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "delete": {
+        "deprecated": false,
+        "description": "Delete a record",
+        "responses": {
+          "200": {
+            "description": "deletes a single record based on the ID supplied",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "integer",
+                  "format": "int64"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Entity"
         ],
         "parameters": [
           {
@@ -1350,7 +1337,7 @@
     "/partners/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the number of partners documents",
+        "description": "Retrieve the numver of partners documents",
         "responses": {
           "200": {
             "description": "Retrieve partners document(s)",
@@ -4428,34 +4415,6 @@
   },
   "components": {
     "schemas": {
-      "Company-directory": {
-        "required": [
-          "id"
-        ],
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          }
-        }
-      },
-      "NewCompany-directory": {
-        "properties": {
-          "published_at": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "created_by": {
-            "type": "string"
-          },
-          "updated_by": {
-            "type": "string"
-          }
-        }
-      },
       "Contract-opportunities": {
         "required": [
           "id"
@@ -4485,6 +4444,1362 @@
           "contractExpiration": {
             "type": "string",
             "format": "date-time"
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "created_by": {
+            "type": "string"
+          },
+          "updated_by": {
+            "type": "string"
+          }
+        }
+      },
+      "Entity": {
+        "required": [
+          "id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "entityRegistration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "ueiSAM": {
+                "type": "string"
+              },
+              "ueiDUNS": {
+                "type": "string"
+              },
+              "cageCode": {
+                "type": "string"
+              },
+              "legalBusinessName": {
+                "type": "string"
+              },
+              "dbaName": {
+                "type": "string"
+              },
+              "purposeOfRegistrationCode": {
+                "type": "string"
+              },
+              "purposeOfRegistrationDesc": {
+                "type": "string"
+              },
+              "registrationStatus": {
+                "type": "string"
+              },
+              "registrationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "lastUpdateDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "expirationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "noPublicDisplayFlag": {
+                "type": "string"
+              },
+              "exclusionStatusFlag": {
+                "type": "string"
+              },
+              "exclusionUrl": {
+                "type": "string"
+              }
+            }
+          },
+          "coreData": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "entityInformation": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "entityURL": {
+                    "type": "string"
+                  },
+                  "entityDivisionName": {
+                    "type": "string"
+                  },
+                  "entityDivisionNumber": {
+                    "type": "string"
+                  },
+                  "entityStartDate": {
+                    "type": "string"
+                  },
+                  "fiscalYearEndCloseDate": {
+                    "type": "string"
+                  },
+                  "submissionDate": {
+                    "type": "string"
+                  }
+                }
+              },
+              "physicalAddress": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "addressLine1": {
+                    "type": "string"
+                  },
+                  "addressLine2": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "stateOrProvinceCode": {
+                    "type": "string",
+                    "enum": [
+                      "AL",
+                      "AK",
+                      "AZ",
+                      "AR",
+                      "CA",
+                      "CO",
+                      "CT",
+                      "DE",
+                      "DC",
+                      "FL",
+                      "GA",
+                      "HI",
+                      "ID",
+                      "IL",
+                      "IN",
+                      "IA",
+                      "KS",
+                      "KY",
+                      "LA",
+                      "ME",
+                      "MD",
+                      "MA",
+                      "MI",
+                      "MN",
+                      "MS",
+                      "MO",
+                      "MT",
+                      "NE",
+                      "NV",
+                      "NH",
+                      "NJ",
+                      "NM",
+                      "NY",
+                      "NC",
+                      "ND",
+                      "OH",
+                      "OK",
+                      "OR",
+                      "PA",
+                      "RI",
+                      "SC",
+                      "SD",
+                      "TN",
+                      "TX",
+                      "UT",
+                      "VT",
+                      "VA",
+                      "WA",
+                      "WV",
+                      "WI",
+                      "WY"
+                    ]
+                  },
+                  "zipCode": {
+                    "type": "string"
+                  },
+                  "zipCodePlus4": {
+                    "type": "string"
+                  },
+                  "countryCode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "mailingAddress": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "addressLine1": {
+                    "type": "string"
+                  },
+                  "addressLine2": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "stateOrProvinceCode": {
+                    "type": "string",
+                    "enum": [
+                      "AL",
+                      "AK",
+                      "AZ",
+                      "AR",
+                      "CA",
+                      "CO",
+                      "CT",
+                      "DE",
+                      "DC",
+                      "FL",
+                      "GA",
+                      "HI",
+                      "ID",
+                      "IL",
+                      "IN",
+                      "IA",
+                      "KS",
+                      "KY",
+                      "LA",
+                      "ME",
+                      "MD",
+                      "MA",
+                      "MI",
+                      "MN",
+                      "MS",
+                      "MO",
+                      "MT",
+                      "NE",
+                      "NV",
+                      "NH",
+                      "NJ",
+                      "NM",
+                      "NY",
+                      "NC",
+                      "ND",
+                      "OH",
+                      "OK",
+                      "OR",
+                      "PA",
+                      "RI",
+                      "SC",
+                      "SD",
+                      "TN",
+                      "TX",
+                      "UT",
+                      "VT",
+                      "VA",
+                      "WA",
+                      "WV",
+                      "WI",
+                      "WY"
+                    ]
+                  },
+                  "zipCode": {
+                    "type": "string"
+                  },
+                  "zipCodePlus4": {
+                    "type": "string"
+                  },
+                  "countryCode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "congressionalDistrict": {
+                "type": "string"
+              },
+              "generalInformation": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "entityStructureCode": {
+                    "type": "string"
+                  },
+                  "entityStructureDesc": {
+                    "type": "string"
+                  },
+                  "entityTypeCode": {
+                    "type": "string"
+                  },
+                  "entityTypeDesc": {
+                    "type": "string"
+                  },
+                  "profitStructureCode": {
+                    "type": "string"
+                  },
+                  "profitStructureDesc": {
+                    "type": "string"
+                  },
+                  "organizationStructureCode": {
+                    "type": "string"
+                  },
+                  "organizationStructureDesc": {
+                    "type": "string"
+                  },
+                  "stateOfIncorporationCode": {
+                    "type": "string"
+                  },
+                  "stateOfIncorporationDesc": {
+                    "type": "string"
+                  },
+                  "countryOfIncorporationCode": {
+                    "type": "string"
+                  },
+                  "countryOfIncorporationDesc": {
+                    "type": "string"
+                  }
+                }
+              },
+              "businessTypes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "businessTypeList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "businessTypeCode": {
+                            "type": "string"
+                          },
+                          "businessTypeDescription": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "sbaBusinessTypeList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "sbaBusinessTypeCode": {
+                            "type": "string"
+                          },
+                          "sbaBusinessTypeDesc": {
+                            "type": "string"
+                          },
+                          "certificationEntryDate": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "certificationExitDate": {
+                            "type": "string",
+                            "format": "date"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "assertions": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "goodsAndServices": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "PrimaryNaics": {
+                    "type": "string"
+                  },
+                  "naicsList": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "naics_Code": {
+                          "type": "integer"
+                        },
+                        "naics_Description": {
+                          "type": "string"
+                        },
+                        "SbaSmallBusiness": {
+                          "type": "boolean"
+                        },
+                        "NaicsException": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "pointsOfContact": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "governmentBusinessPOC": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "firstName": {
+                        "type": "string"
+                      },
+                      "middleInitial": {
+                        "type": "string"
+                      },
+                      "lastName": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "usPhone": {
+                        "type": "integer"
+                      },
+                      "usPhoneExtension": {
+                        "type": "integer"
+                      },
+                      "nonUSPhone": {
+                        "type": "integer"
+                      },
+                      "fax": {
+                        "type": "integer"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "stateOrProvinceCode": {
+                        "type": "string",
+                        "enum": [
+                          "AL",
+                          "AK",
+                          "AZ",
+                          "AR",
+                          "CA",
+                          "CO",
+                          "CT",
+                          "DE",
+                          "DC",
+                          "FL",
+                          "GA",
+                          "HI",
+                          "ID",
+                          "IL",
+                          "IN",
+                          "IA",
+                          "KS",
+                          "KY",
+                          "LA",
+                          "ME",
+                          "MD",
+                          "MA",
+                          "MI",
+                          "MN",
+                          "MS",
+                          "MO",
+                          "MT",
+                          "NE",
+                          "NV",
+                          "NH",
+                          "NJ",
+                          "NM",
+                          "NY",
+                          "NC",
+                          "ND",
+                          "OH",
+                          "OK",
+                          "OR",
+                          "PA",
+                          "RI",
+                          "SC",
+                          "SD",
+                          "TN",
+                          "TX",
+                          "UT",
+                          "VT",
+                          "VA",
+                          "WA",
+                          "WV",
+                          "WI",
+                          "WY"
+                        ]
+                      },
+                      "zipCode": {
+                        "type": "string"
+                      },
+                      "zipCodePlus4": {
+                        "type": "string"
+                      },
+                      "countryCode": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "electronicBusinessPOC": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "firstName": {
+                        "type": "string"
+                      },
+                      "middleInitial": {
+                        "type": "string"
+                      },
+                      "lastName": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "usPhone": {
+                        "type": "integer"
+                      },
+                      "usPhoneExtension": {
+                        "type": "integer"
+                      },
+                      "nonUSPhone": {
+                        "type": "integer"
+                      },
+                      "fax": {
+                        "type": "integer"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "stateOrProvinceCode": {
+                        "type": "string",
+                        "enum": [
+                          "AL",
+                          "AK",
+                          "AZ",
+                          "AR",
+                          "CA",
+                          "CO",
+                          "CT",
+                          "DE",
+                          "DC",
+                          "FL",
+                          "GA",
+                          "HI",
+                          "ID",
+                          "IL",
+                          "IN",
+                          "IA",
+                          "KS",
+                          "KY",
+                          "LA",
+                          "ME",
+                          "MD",
+                          "MA",
+                          "MI",
+                          "MN",
+                          "MS",
+                          "MO",
+                          "MT",
+                          "NE",
+                          "NV",
+                          "NH",
+                          "NJ",
+                          "NM",
+                          "NY",
+                          "NC",
+                          "ND",
+                          "OH",
+                          "OK",
+                          "OR",
+                          "PA",
+                          "RI",
+                          "SC",
+                          "SD",
+                          "TN",
+                          "TX",
+                          "UT",
+                          "VT",
+                          "VA",
+                          "WA",
+                          "WV",
+                          "WI",
+                          "WY"
+                        ]
+                      },
+                      "zipCode": {
+                        "type": "string"
+                      },
+                      "zipCodePlus4": {
+                        "type": "string"
+                      },
+                      "countryCode": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "published_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      },
+      "NewEntity": {
+        "properties": {
+          "entityRegistration": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "ueiSAM": {
+                "type": "string"
+              },
+              "ueiDUNS": {
+                "type": "string"
+              },
+              "cageCode": {
+                "type": "string"
+              },
+              "legalBusinessName": {
+                "type": "string"
+              },
+              "dbaName": {
+                "type": "string"
+              },
+              "purposeOfRegistrationCode": {
+                "type": "string"
+              },
+              "purposeOfRegistrationDesc": {
+                "type": "string"
+              },
+              "registrationStatus": {
+                "type": "string"
+              },
+              "registrationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "lastUpdateDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "expirationDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "noPublicDisplayFlag": {
+                "type": "string"
+              },
+              "exclusionStatusFlag": {
+                "type": "string"
+              },
+              "exclusionUrl": {
+                "type": "string"
+              }
+            }
+          },
+          "coreData": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "entityInformation": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "entityURL": {
+                    "type": "string"
+                  },
+                  "entityDivisionName": {
+                    "type": "string"
+                  },
+                  "entityDivisionNumber": {
+                    "type": "string"
+                  },
+                  "entityStartDate": {
+                    "type": "string"
+                  },
+                  "fiscalYearEndCloseDate": {
+                    "type": "string"
+                  },
+                  "submissionDate": {
+                    "type": "string"
+                  }
+                }
+              },
+              "physicalAddress": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "addressLine1": {
+                    "type": "string"
+                  },
+                  "addressLine2": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "stateOrProvinceCode": {
+                    "type": "string",
+                    "enum": [
+                      "AL",
+                      "AK",
+                      "AZ",
+                      "AR",
+                      "CA",
+                      "CO",
+                      "CT",
+                      "DE",
+                      "DC",
+                      "FL",
+                      "GA",
+                      "HI",
+                      "ID",
+                      "IL",
+                      "IN",
+                      "IA",
+                      "KS",
+                      "KY",
+                      "LA",
+                      "ME",
+                      "MD",
+                      "MA",
+                      "MI",
+                      "MN",
+                      "MS",
+                      "MO",
+                      "MT",
+                      "NE",
+                      "NV",
+                      "NH",
+                      "NJ",
+                      "NM",
+                      "NY",
+                      "NC",
+                      "ND",
+                      "OH",
+                      "OK",
+                      "OR",
+                      "PA",
+                      "RI",
+                      "SC",
+                      "SD",
+                      "TN",
+                      "TX",
+                      "UT",
+                      "VT",
+                      "VA",
+                      "WA",
+                      "WV",
+                      "WI",
+                      "WY"
+                    ]
+                  },
+                  "zipCode": {
+                    "type": "string"
+                  },
+                  "zipCodePlus4": {
+                    "type": "string"
+                  },
+                  "countryCode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "mailingAddress": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "addressLine1": {
+                    "type": "string"
+                  },
+                  "addressLine2": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "stateOrProvinceCode": {
+                    "type": "string",
+                    "enum": [
+                      "AL",
+                      "AK",
+                      "AZ",
+                      "AR",
+                      "CA",
+                      "CO",
+                      "CT",
+                      "DE",
+                      "DC",
+                      "FL",
+                      "GA",
+                      "HI",
+                      "ID",
+                      "IL",
+                      "IN",
+                      "IA",
+                      "KS",
+                      "KY",
+                      "LA",
+                      "ME",
+                      "MD",
+                      "MA",
+                      "MI",
+                      "MN",
+                      "MS",
+                      "MO",
+                      "MT",
+                      "NE",
+                      "NV",
+                      "NH",
+                      "NJ",
+                      "NM",
+                      "NY",
+                      "NC",
+                      "ND",
+                      "OH",
+                      "OK",
+                      "OR",
+                      "PA",
+                      "RI",
+                      "SC",
+                      "SD",
+                      "TN",
+                      "TX",
+                      "UT",
+                      "VT",
+                      "VA",
+                      "WA",
+                      "WV",
+                      "WI",
+                      "WY"
+                    ]
+                  },
+                  "zipCode": {
+                    "type": "string"
+                  },
+                  "zipCodePlus4": {
+                    "type": "string"
+                  },
+                  "countryCode": {
+                    "type": "string"
+                  }
+                }
+              },
+              "congressionalDistrict": {
+                "type": "string"
+              },
+              "generalInformation": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "entityStructureCode": {
+                    "type": "string"
+                  },
+                  "entityStructureDesc": {
+                    "type": "string"
+                  },
+                  "entityTypeCode": {
+                    "type": "string"
+                  },
+                  "entityTypeDesc": {
+                    "type": "string"
+                  },
+                  "profitStructureCode": {
+                    "type": "string"
+                  },
+                  "profitStructureDesc": {
+                    "type": "string"
+                  },
+                  "organizationStructureCode": {
+                    "type": "string"
+                  },
+                  "organizationStructureDesc": {
+                    "type": "string"
+                  },
+                  "stateOfIncorporationCode": {
+                    "type": "string"
+                  },
+                  "stateOfIncorporationDesc": {
+                    "type": "string"
+                  },
+                  "countryOfIncorporationCode": {
+                    "type": "string"
+                  },
+                  "countryOfIncorporationDesc": {
+                    "type": "string"
+                  }
+                }
+              },
+              "businessTypes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "id"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "businessTypeList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "businessTypeCode": {
+                            "type": "string"
+                          },
+                          "businessTypeDescription": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "sbaBusinessTypeList": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "sbaBusinessTypeCode": {
+                            "type": "string"
+                          },
+                          "sbaBusinessTypeDesc": {
+                            "type": "string"
+                          },
+                          "certificationEntryDate": {
+                            "type": "string",
+                            "format": "date"
+                          },
+                          "certificationExitDate": {
+                            "type": "string",
+                            "format": "date"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "assertions": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "goodsAndServices": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "PrimaryNaics": {
+                    "type": "string"
+                  },
+                  "naicsList": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "naics_Code": {
+                          "type": "integer"
+                        },
+                        "naics_Description": {
+                          "type": "string"
+                        },
+                        "SbaSmallBusiness": {
+                          "type": "boolean"
+                        },
+                        "NaicsException": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "pointsOfContact": {
+                "type": "object",
+                "required": [
+                  "id"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "governmentBusinessPOC": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "firstName": {
+                        "type": "string"
+                      },
+                      "middleInitial": {
+                        "type": "string"
+                      },
+                      "lastName": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "usPhone": {
+                        "type": "integer"
+                      },
+                      "usPhoneExtension": {
+                        "type": "integer"
+                      },
+                      "nonUSPhone": {
+                        "type": "integer"
+                      },
+                      "fax": {
+                        "type": "integer"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "stateOrProvinceCode": {
+                        "type": "string",
+                        "enum": [
+                          "AL",
+                          "AK",
+                          "AZ",
+                          "AR",
+                          "CA",
+                          "CO",
+                          "CT",
+                          "DE",
+                          "DC",
+                          "FL",
+                          "GA",
+                          "HI",
+                          "ID",
+                          "IL",
+                          "IN",
+                          "IA",
+                          "KS",
+                          "KY",
+                          "LA",
+                          "ME",
+                          "MD",
+                          "MA",
+                          "MI",
+                          "MN",
+                          "MS",
+                          "MO",
+                          "MT",
+                          "NE",
+                          "NV",
+                          "NH",
+                          "NJ",
+                          "NM",
+                          "NY",
+                          "NC",
+                          "ND",
+                          "OH",
+                          "OK",
+                          "OR",
+                          "PA",
+                          "RI",
+                          "SC",
+                          "SD",
+                          "TN",
+                          "TX",
+                          "UT",
+                          "VT",
+                          "VA",
+                          "WA",
+                          "WV",
+                          "WI",
+                          "WY"
+                        ]
+                      },
+                      "zipCode": {
+                        "type": "string"
+                      },
+                      "zipCodePlus4": {
+                        "type": "string"
+                      },
+                      "countryCode": {
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "electronicBusinessPOC": {
+                    "type": "object",
+                    "required": [
+                      "id"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "firstName": {
+                        "type": "string"
+                      },
+                      "middleInitial": {
+                        "type": "string"
+                      },
+                      "lastName": {
+                        "type": "string"
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "usPhone": {
+                        "type": "integer"
+                      },
+                      "usPhoneExtension": {
+                        "type": "integer"
+                      },
+                      "nonUSPhone": {
+                        "type": "integer"
+                      },
+                      "fax": {
+                        "type": "integer"
+                      },
+                      "email": {
+                        "type": "string"
+                      },
+                      "addressLine1": {
+                        "type": "string"
+                      },
+                      "addressLine2": {
+                        "type": "string"
+                      },
+                      "city": {
+                        "type": "string"
+                      },
+                      "stateOrProvinceCode": {
+                        "type": "string",
+                        "enum": [
+                          "AL",
+                          "AK",
+                          "AZ",
+                          "AR",
+                          "CA",
+                          "CO",
+                          "CT",
+                          "DE",
+                          "DC",
+                          "FL",
+                          "GA",
+                          "HI",
+                          "ID",
+                          "IL",
+                          "IN",
+                          "IA",
+                          "KS",
+                          "KY",
+                          "LA",
+                          "ME",
+                          "MD",
+                          "MA",
+                          "MI",
+                          "MN",
+                          "MS",
+                          "MO",
+                          "MT",
+                          "NE",
+                          "NV",
+                          "NH",
+                          "NJ",
+                          "NM",
+                          "NY",
+                          "NC",
+                          "ND",
+                          "OH",
+                          "OK",
+                          "OR",
+                          "PA",
+                          "RI",
+                          "SC",
+                          "SD",
+                          "TN",
+                          "TX",
+                          "UT",
+                          "VT",
+                          "VA",
+                          "WA",
+                          "WV",
+                          "WI",
+                          "WY"
+                        ]
+                      },
+                      "zipCode": {
+                        "type": "string"
+                      },
+                      "zipCodePlus4": {
+                        "type": "string"
+                      },
+                      "countryCode": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -4557,26 +5872,14 @@
                 "isMember": {
                   "type": "boolean"
                 },
-                "entityRegistration": {
-                  "type": "component"
-                },
-                "NaicsList": {
-                  "type": "component"
-                },
-                "GovernmentContact": {
-                  "type": "component"
-                },
-                "BusinessContact": {
-                  "type": "component"
-                },
-                "BusinessTypeList": {
-                  "type": "component"
-                },
                 "partner_ids": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "entity": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4766,26 +6069,14 @@
                 "isMember": {
                   "type": "boolean"
                 },
-                "entityRegistration": {
-                  "type": "component"
-                },
-                "NaicsList": {
-                  "type": "component"
-                },
-                "GovernmentContact": {
-                  "type": "component"
-                },
-                "BusinessContact": {
-                  "type": "component"
-                },
-                "BusinessTypeList": {
-                  "type": "component"
-                },
                 "partner_ids": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "entity": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"
@@ -4907,269 +6198,6 @@
             "type": "boolean",
             "default": false
           },
-          "entityRegistration": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "ueiSAM": {
-                "type": "string"
-              },
-              "ueiDUNS": {
-                "type": "string"
-              },
-              "cageCode": {
-                "type": "string"
-              },
-              "legalBusinessName": {
-                "type": "string"
-              },
-              "dbaName": {
-                "type": "string"
-              },
-              "purposeOfRegistrationCode": {
-                "type": "string"
-              },
-              "purposeOfRegistrationDesc": {
-                "type": "string"
-              },
-              "registrationStatus": {
-                "type": "string"
-              },
-              "registrationDate": {
-                "type": "string",
-                "format": "date"
-              },
-              "lastUpdateDate": {
-                "type": "string",
-                "format": "date"
-              },
-              "expirationDate": {
-                "type": "string",
-                "format": "date"
-              },
-              "noPublicDisplayFlag": {
-                "type": "boolean"
-              },
-              "exclusionStatusFlag": {
-                "type": "boolean"
-              },
-              "exclusionUrl": {
-                "type": "string"
-              }
-            }
-          },
-          "NaicsList": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "naics_Code": {
-                  "type": "integer"
-                },
-                "naics_Description": {
-                  "type": "string"
-                },
-                "SbaSmallBusiness": {
-                  "type": "boolean"
-                },
-                "NaicsException": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "GovernmentContact": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "MiddleInitial": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Title": {
-                "type": "string"
-              },
-              "USPhone": {
-                "type": "integer"
-              },
-              "USPhoneExtension": {
-                "type": "integer"
-              },
-              "NonUSPhone": {
-                "type": "integer"
-              },
-              "Fax": {
-                "type": "integer"
-              },
-              "Email": {
-                "type": "string"
-              }
-            }
-          },
-          "BusinessContact": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "MiddleInitial": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Title": {
-                "type": "string"
-              },
-              "USPhone": {
-                "type": "integer"
-              },
-              "USPhoneExtension": {
-                "type": "integer"
-              },
-              "NonUSPhone": {
-                "type": "integer"
-              },
-              "Fax": {
-                "type": "integer"
-              },
-              "Email": {
-                "type": "string"
-              },
-              "BusinessPocAddress": {
-                "type": "object",
-                "required": [
-                  "id"
-                ],
-                "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "AddressLine1": {
-                    "type": "string"
-                  },
-                  "AddressLine2": {
-                    "type": "string"
-                  },
-                  "City": {
-                    "type": "string"
-                  },
-                  "State": {
-                    "type": "string",
-                    "enum": [
-                      "AL",
-                      "AK",
-                      "AZ",
-                      "AR",
-                      "CA",
-                      "CO",
-                      "CT",
-                      "DE",
-                      "DC",
-                      "FL",
-                      "GA",
-                      "HI",
-                      "ID",
-                      "IL",
-                      "IN",
-                      "IA",
-                      "KS",
-                      "KY",
-                      "LA",
-                      "ME",
-                      "MD",
-                      "MA",
-                      "MI",
-                      "MN",
-                      "MS",
-                      "MO",
-                      "MT",
-                      "NE",
-                      "NV",
-                      "NH",
-                      "NJ",
-                      "NM",
-                      "NY",
-                      "NC",
-                      "ND",
-                      "OH",
-                      "OK",
-                      "OR",
-                      "PA",
-                      "RI",
-                      "SC",
-                      "SD",
-                      "TN",
-                      "TX",
-                      "UT",
-                      "VT",
-                      "VA",
-                      "WA",
-                      "WV",
-                      "WI",
-                      "WY"
-                    ]
-                  },
-                  "Zipcode": {
-                    "type": "integer"
-                  },
-                  "Country": {
-                    "type": "string",
-                    "enum": [
-                      "USA"
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "BusinessTypeList": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "BusinessTypeCode": {
-                  "type": "string"
-                },
-                "BusinessTypeDescription": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "partner_ids": {
             "type": "array",
             "items": {
@@ -5201,6 +6229,34 @@
                 "updated_by": {
                   "type": "string"
                 }
+              }
+            }
+          },
+          "entity": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "entityRegistration": {
+                "type": "component"
+              },
+              "coreData": {
+                "type": "component"
+              },
+              "assertions": {
+                "type": "component"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
               }
             }
           }
@@ -5252,274 +6308,14 @@
             "type": "boolean",
             "default": false
           },
-          "entityRegistration": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "ueiSAM": {
-                "type": "string"
-              },
-              "ueiDUNS": {
-                "type": "string"
-              },
-              "cageCode": {
-                "type": "string"
-              },
-              "legalBusinessName": {
-                "type": "string"
-              },
-              "dbaName": {
-                "type": "string"
-              },
-              "purposeOfRegistrationCode": {
-                "type": "string"
-              },
-              "purposeOfRegistrationDesc": {
-                "type": "string"
-              },
-              "registrationStatus": {
-                "type": "string"
-              },
-              "registrationDate": {
-                "type": "string",
-                "format": "date"
-              },
-              "lastUpdateDate": {
-                "type": "string",
-                "format": "date"
-              },
-              "expirationDate": {
-                "type": "string",
-                "format": "date"
-              },
-              "noPublicDisplayFlag": {
-                "type": "boolean"
-              },
-              "exclusionStatusFlag": {
-                "type": "boolean"
-              },
-              "exclusionUrl": {
-                "type": "string"
-              }
-            }
-          },
-          "NaicsList": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "naics_Code": {
-                  "type": "integer"
-                },
-                "naics_Description": {
-                  "type": "string"
-                },
-                "SbaSmallBusiness": {
-                  "type": "boolean"
-                },
-                "NaicsException": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "GovernmentContact": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "MiddleInitial": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Title": {
-                "type": "string"
-              },
-              "USPhone": {
-                "type": "integer"
-              },
-              "USPhoneExtension": {
-                "type": "integer"
-              },
-              "NonUSPhone": {
-                "type": "integer"
-              },
-              "Fax": {
-                "type": "integer"
-              },
-              "Email": {
-                "type": "string"
-              }
-            }
-          },
-          "BusinessContact": {
-            "type": "object",
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "FirstName": {
-                "type": "string"
-              },
-              "MiddleInitial": {
-                "type": "string"
-              },
-              "LastName": {
-                "type": "string"
-              },
-              "Title": {
-                "type": "string"
-              },
-              "USPhone": {
-                "type": "integer"
-              },
-              "USPhoneExtension": {
-                "type": "integer"
-              },
-              "NonUSPhone": {
-                "type": "integer"
-              },
-              "Fax": {
-                "type": "integer"
-              },
-              "Email": {
-                "type": "string"
-              },
-              "BusinessPocAddress": {
-                "type": "object",
-                "required": [
-                  "id"
-                ],
-                "properties": {
-                  "id": {
-                    "type": "string"
-                  },
-                  "AddressLine1": {
-                    "type": "string"
-                  },
-                  "AddressLine2": {
-                    "type": "string"
-                  },
-                  "City": {
-                    "type": "string"
-                  },
-                  "State": {
-                    "type": "string",
-                    "enum": [
-                      "AL",
-                      "AK",
-                      "AZ",
-                      "AR",
-                      "CA",
-                      "CO",
-                      "CT",
-                      "DE",
-                      "DC",
-                      "FL",
-                      "GA",
-                      "HI",
-                      "ID",
-                      "IL",
-                      "IN",
-                      "IA",
-                      "KS",
-                      "KY",
-                      "LA",
-                      "ME",
-                      "MD",
-                      "MA",
-                      "MI",
-                      "MN",
-                      "MS",
-                      "MO",
-                      "MT",
-                      "NE",
-                      "NV",
-                      "NH",
-                      "NJ",
-                      "NM",
-                      "NY",
-                      "NC",
-                      "ND",
-                      "OH",
-                      "OK",
-                      "OR",
-                      "PA",
-                      "RI",
-                      "SC",
-                      "SD",
-                      "TN",
-                      "TX",
-                      "UT",
-                      "VT",
-                      "VA",
-                      "WA",
-                      "WV",
-                      "WI",
-                      "WY"
-                    ]
-                  },
-                  "Zipcode": {
-                    "type": "integer"
-                  },
-                  "Country": {
-                    "type": "string",
-                    "enum": [
-                      "USA"
-                    ]
-                  }
-                }
-              }
-            }
-          },
-          "BusinessTypeList": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "BusinessTypeCode": {
-                  "type": "string"
-                },
-                "BusinessTypeDescription": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "partner_ids": {
             "type": "array",
             "items": {
               "type": "string"
             }
+          },
+          "entity": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"
@@ -5554,6 +6350,9 @@
     }
   },
   "tags": [
+    {
+      "name": "Entity"
+    },
     {
       "name": "Partners"
     },

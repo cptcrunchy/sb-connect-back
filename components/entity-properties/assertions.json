@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_entity_properties_assertions",
+  "info": {
+    "name": "assertions",
+    "icon": "baby"
+  },
+  "options": {},
+  "attributes": {
+    "goodsAndServices": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.goods-and-services"
+    },
+    "pointsOfContact": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entity-properties.points-of-contact"
+    }
+  }
+}

@@ -2,14 +2,15 @@
   "collectionName": "components_shared_goods_and_services",
   "info": {
     "name": "GoodsAndServices",
-    "icon": "american-sign-language-interpreting"
+    "icon": "american-sign-language-interpreting",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "PrimaryNaics": {
       "type": "string"
     },
-    "NaicsList": {
+    "naicsList": {
       "type": "component",
       "repeatable": true,
       "component": "shared.naic"
