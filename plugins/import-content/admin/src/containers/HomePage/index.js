@@ -14,6 +14,8 @@ import { request } from 'strapi-helper-plugin'
 // import PropTypes from 'prop-types';
 import pluginId from '../../pluginId';
 import UploadFileForm from '../../components/UploadFileForm';
+import ExternalUrlForm from '../../components/ExternalUrlForm'
+import RawInputForm from '../../components/RawInputForm'
 
 const getUrl = (to) => to ? `/plugins/${pluginId}/${to}` : `/plugins/${pluginId}`;
 
@@ -163,10 +165,26 @@ class HomePage extends Component {
                 />
               </div>
             </Row>
-            <UploadFileForm
-              onRequestAnalysis={this.onRequestAnalysis}
-              loadingAnalysis={this.state.analyzing}
-            />
+            <Row>
+              {this.state.importSource === "upload" && (
+                <UploadFileForm
+                  onRequestAnalysis={this.onRequestAnalysis}
+                  loadingAnalysis={this.state.analyzing}
+                />
+              )}
+              {this.state.importSource === "url" && (
+                <ExternalUrlForm
+                  onRequestAnalysis={this.onRequestAnalysis}
+                  loadingAnalysis={this.state.analyzing}
+                />
+              )}
+              {this.state.importSource === "raw" && (
+                <RawInputForm
+                  onRequestAnalysis={this.onRequestAnalysis}
+                  loadingAnalysis={this.state.analyzing}
+                />
+              )}
+            </Row>
           </Block>
         </div>
       </div>
