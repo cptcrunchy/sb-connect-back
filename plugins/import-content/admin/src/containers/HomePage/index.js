@@ -63,12 +63,19 @@ class HomePage extends Component {
         });
 
         this.setState({ analysis: response, analyzing: false }, () => {
-          strapi.notification.success(`Analyzed Successfully`);
+          strapi.notification.toggle({
+            id: "app.notification.success",
+            defaultMessage: `Analyzed Successfully`,
+          });
         });
       } catch (e) {
         this.setState({ analyzing: false }, () => {
-          strapi.notification.error(`Analyze Failed, try again`);
-          strapi.notification.error(`${e}`);
+          strapi.notification.toggle(
+            {
+              id: "app.notification.warning",
+              defaultMessage: `Analyze Failed: ${e}`,
+            }
+          );
         });
       }
     });
@@ -97,7 +104,10 @@ class HomePage extends Component {
       return { models, modelOptions };
     } catch (e) {
       this.setState({ loading: false }, () => {
-        strapi.notification.error(`${e}`);
+        strapi.notification.toggle({
+          id: "app.notification.warning",
+          defaultMessage: `${e}`,
+        });
       });
     }
     return [];
