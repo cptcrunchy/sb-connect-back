@@ -11,32 +11,33 @@
     "strapi": "strapi"
   },
   "devDependencies": {
-    "strapi-provider-email-sendmail": "^3.6.5"
+    "strapi-provider-email-sendmail": "^3.6.8"
   },
   "dependencies": {
     "content-type-parser": "^1.0.2",
-    "csv-parse": "^4.8.2",
-    "get-urls": "^9.2.0",
-    "knex": "0.21.18",
+    "csv-parse": "^4.16.3",
+    "get-urls": "^10.0.0",
+    "knex": "0.95.11",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
-    "pg": "^8.6.0",
-    "pg-connection-string": "^2.4.0",
+    "pg": "^8.7.1",
+    "pg-connection-string": "^2.5.0",
     "request": "^2.88.2",
-    "simple-statistics": "^7.0.7",
-    "sqlite3": "5.0.0",
-    "strapi": "3.6.5",
+    "rss-parser": "^3.12.0",
+    "simple-statistics": "^7.7.0",
+    "sqlite3": "^5.0.2",
+    "strapi": "^3.6.8",
     "strapi-admin": "^3.6.8",
-    "strapi-connector-bookshelf": "3.6.5",
+    "strapi-connector-bookshelf": "3.6.8",
     "strapi-plugin-content-manager": "^3.6.8",
     "strapi-plugin-content-type-builder": "^3.6.8",
-    "strapi-plugin-documentation": "^3.6.5",
-    "strapi-plugin-email": "3.6.5",
+    "strapi-plugin-documentation": "^3.6.8",
+    "strapi-plugin-email": "3.6.8",
     "strapi-plugin-i18n": "^3.6.8",
     "strapi-plugin-upload": "^3.6.8",
     "strapi-plugin-users-permissions": "^3.6.8",
-    "strapi-utils": "3.6.5",
-    "striptags": "^3.1.1"
+    "strapi-utils": "3.6.8",
+    "striptags": "^3.2.0"
   },
   "author": {
     "name": "A Strapi developer"
