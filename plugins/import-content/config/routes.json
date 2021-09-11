@@ -1,9 +1,9 @@
 {
   "routes": [
     {
-      "method": "GET",
-      "path": "/",
-      "handler": "import-content.index",
+      "method": "POST",
+      "path": "/preAnalyzeImportFile",
+      "handler": "ImportContent.preAnalyzeImportFile",
       "config": {
         "policies": []
       }
