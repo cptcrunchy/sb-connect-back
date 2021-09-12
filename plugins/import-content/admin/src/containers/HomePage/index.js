@@ -3,19 +3,21 @@
  * HomePage
  *
  */
-import { HeaderNav, LoadingIndicator, PluginHeader, } from "strapi-helper-plugin";
-import Row from "../../components/Row";
-import Block from "../../components/Block";
-import { Select, Label } from "@buffetjs/core";
-import { get, has, isEmpty, pickBy, set } from "lodash";
-
 import React, { memo, Component } from 'react';
 import { request } from 'strapi-helper-plugin'
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import pluginId from '../../pluginId';
 import UploadFileForm from '../../components/UploadFileForm';
 import ExternalUrlForm from '../../components/ExternalUrlForm'
 import RawInputForm from '../../components/RawInputForm'
+import MappingTable from "../../components/MappingTable";
+
+import { HeaderNav, LoadingIndicator, PluginHeader, } from "strapi-helper-plugin";
+import Row from "../../components/Row";
+import Block from "../../components/Block";
+import { Select, Label, Button } from "@buffetjs/core";
+import { get, has, isEmpty, pickBy, set } from "lodash";
+
 
 const getUrl = (to) => to ? `/plugins/${pluginId}/${to}` : `/plugins/${pluginId}`;
 
@@ -33,55 +35,52 @@ class HomePage extends Component {
     importSource: "upload",
     analyzing: false,
     analysis: null,
-    selectedContentType: ""
+    selectedContentType: "",
+    fieldMapping: {},
+  };
+
+  handleSaveImport = async () => {
+    const { selectedContentType, fieldMapping } = this.state;
+    const { analysisConfig } = this;
+    const importConfig = {
+      ...analysisConfig,
+      contentType: selectedContentType,
+      fieldMapping,
+    };
+    try {
+      await request("/import-content", { method: "POST", body: importConfig });
+      this.setState({ saving: false }, () => {
+        strapi.notification.info("Import started");
+      });
+    } catch (e) {
+      strapi.notification.error(`${e}`);
+    }
+  }
+
+  getTargetModel = () => {
+    const { models } = this.state;
+    if (!models) return null;
+    return models.find((model) => model.uid === this.state.selectedContentType);
+  };
+
+  setFieldMapping = (fieldMapping) => {
+    this.setState({ fieldMapping });
+  };
+
+  selectImportDest = (selectedContentType) => {
+    this.setState({ selectedContentType });
   };
 
   componentDidMount() {
-    this.getModels().then(res => {
+    this.getModels().then((res) => {
       const { models, modelOptions } = res;
       this.setState({
         models,
         modelOptions,
-        selectedContentType: modelOptions ? modelOptions[0].value : ""
-      })
-    })
-  }
-
-  selectImportDest = selectedContentType => {
-    this.setState({ selectedContentType })
-  }
-
-  selectImportSource = (importSource) => {
-    this.setState({ importSource });
-  };
-
-  onRequestAnalysis = async (analysisConfig) => {
-    this.analysisConfig = analysisConfig;
-    this.setState({ analyzing: true }, async () => {
-      try {
-        const response = await request("/import-content/preAnalyzeImportFile", {
-          method: "POST",
-          body: analysisConfig,
-        });
-
-        this.setState({ analysis: response, analyzing: false }, () => {
-          strapi.notification.toggle({
-            id: "app.notification.success",
-            defaultMessage: `Analyzed Successfully`,
-          });
-        });
-      } catch (e) {
-        this.setState({ analyzing: false }, () => {
-          strapi.notification.toggle(
-            {
-              id: "app.notification.warning",
-              defaultMessage: `Analyze Failed: ${e}`,
-            }
-          );
-        });
-      }
+        selectedContentType: modelOptions ? modelOptions[0].value : "",
+      });
     });
-  };
+  }
 
   getModels = async () => {
     this.setState({ loading: true });
@@ -113,6 +112,36 @@ class HomePage extends Component {
       });
     }
     return [];
+  };
+
+  selectImportSource = (importSource) => {
+    this.setState({ importSource });
+  };
+
+  onRequestAnalysis = async (analysisConfig) => {
+    this.analysisConfig = analysisConfig;
+    this.setState({ analyzing: true }, async () => {
+      try {
+        const response = await request("/import-content/preAnalyzeImportFile", {
+          method: "POST",
+          body: analysisConfig,
+        });
+
+        this.setState({ analysis: response, analyzing: false }, () => {
+          strapi.notification.toggle({
+            id: "app.notification.success",
+            defaultMessage: `Analyzed Successfully`,
+          });
+        });
+      } catch (e) {
+        this.setState({ analyzing: false }, () => {
+          strapi.notification.toggle({
+            id: "app.notification.warning",
+            defaultMessage: `Analyze Failed: ${e}`,
+          });
+        });
+      }
+    });
   };
 
   render() {
@@ -187,6 +216,16 @@ class HomePage extends Component {
             </Row>
           </Block>
         </div>
+        {this.state.analysis && (
+          <Row className="row">
+            <MappingTable
+              analysis={this.state.analysis}
+              targetModel={this.getTargetModel()}
+              onChange={this.setFieldMapping}
+            />
+            <Button style={{ marginTop: 12}} label={"Run the Import"} onClick={this.handleSaveImport} />
+          </Row>
+        )}
       </div>
     );
   }
