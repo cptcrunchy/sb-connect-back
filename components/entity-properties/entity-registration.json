@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_shared_entity_registrations",
+  "info": {
+    "name": "EntityRegistration",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "ueiSAM": {
+      "type": "string"
+    },
+    "ueiDUNS": {
+      "type": "string"
+    },
+    "cageCode": {
+      "type": "string"
+    },
+    "legalBusinessName": {
+      "type": "string"
+    },
+    "dbaName": {
+      "type": "string"
+    },
+    "purposeOfRegistrationCode": {
+      "type": "string"
+    },
+    "purposeOfRegistrationDesc": {
+      "type": "string"
+    },
+    "registrationStatus": {
+      "type": "string"
+    },
+    "registrationDate": {
+      "type": "date"
+    },
+    "lastUpdateDate": {
+      "type": "date"
+    },
+    "expirationDate": {
+      "type": "date"
+    },
+    "noPublicDisplayFlag": {
+      "type": "string"
+    },
+    "exclusionStatusFlag": {
+      "type": "string"
+    },
+    "exclusionURL": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_contract_types",
+  "info": {
+    "name": "ContractType",
+    "icon": "arrows-alt-h"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

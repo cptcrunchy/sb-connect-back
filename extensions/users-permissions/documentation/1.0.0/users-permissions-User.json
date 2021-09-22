@@ -1251,10 +1251,16 @@
               }
             }
           },
-          "naics": {
+          "statement_of_capability": {
+            "type": "string"
+          },
+          "isMember": {
+            "type": "boolean",
+            "default": false
+          },
+          "partner_ids": {
             "type": "array",
             "items": {
-              "type": "object",
               "required": [
                 "id"
               ],
@@ -1262,78 +1268,51 @@
                 "id": {
                   "type": "string"
                 },
-                "field_id": {
-                  "type": "integer"
+                "partnerId": {
+                  "type": "string"
                 },
-                "field_name": {
+                "isApproved": {
+                  "type": "boolean"
+                },
+                "requestorId": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
               }
             }
           },
-          "company_name": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          },
-          "image": {
+          "entity": {
             "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
+              "entityRegistration": {
+                "type": "component"
+              },
+              "coreData": {
+                "type": "component"
+              },
+              "assertions": {
+                "type": "component"
+              },
+              "user": {
                 "type": "string"
               },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
+              "published_at": {
                 "type": "string"
               },
               "created_by": {
@@ -1343,10 +1322,6 @@
                 "type": "string"
               }
             }
-          },
-          "isMember": {
-            "type": "boolean",
-            "default": false
           }
         }
       },
@@ -1389,35 +1364,21 @@
           "role": {
             "type": "string"
           },
-          "naics": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "field_id": {
-                  "type": "integer"
-                },
-                "field_name": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "company_name": {
-            "type": "string"
-          },
-          "description": {
+          "statement_of_capability": {
             "type": "string"
           },
           "isMember": {
             "type": "boolean",
             "default": false
+          },
+          "partner_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "entity": {
+            "type": "string"
           },
           "created_by": {
             "type": "string"

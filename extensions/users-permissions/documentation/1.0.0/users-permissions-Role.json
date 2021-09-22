@@ -561,20 +561,20 @@
                 "role": {
                   "type": "string"
                 },
-                "naics": {
-                  "type": "component"
-                },
-                "company_name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "image": {
+                "statement_of_capability": {
                   "type": "string"
                 },
                 "isMember": {
                   "type": "boolean"
+                },
+                "partner_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "entity": {
+                  "type": "string"
                 },
                 "created_by": {
                   "type": "string"

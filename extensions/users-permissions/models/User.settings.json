@@ -59,32 +59,21 @@
       "plugin": "users-permissions",
       "configurable": false
     },
-    "naics": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.naic"
-    },
-    "company_name": {
-      "type": "string"
-    },
-    "description": {
+    "statement_of_capability": {
       "type": "richtext"
-    },
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
     },
     "isMember": {
       "type": "boolean",
       "default": false
+    },
+    "partner_ids": {
+      "collection": "partners",
+      "via": "requestorId",
+      "dominant": true
+    },
+    "entity": {
+      "model": "entity",
+      "via": "user"
     }
   }
 }

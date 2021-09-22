@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_address_simples",
+  "info": {
+    "name": "AddressSimple",
+    "icon": "ban"
+  },
+  "options": {},
+  "attributes": {
+    "zip": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "streetAddress": {
+      "type": "string"
+    },
+    "streetAddress2": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entities",
+  "info": {
+    "name": "Entity",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "entityRegistration": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entity-properties.entity-registration"
+    },
+    "coreData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entity-properties.core-data"
+    },
+    "assertions": {
+      "type": "component",
+      "repeatable": false,
+      "component": "entity-properties.assertions"
+    },
+    "user": {
+      "via": "entity",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

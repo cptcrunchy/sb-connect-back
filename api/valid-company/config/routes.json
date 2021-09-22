@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/valid-companies",
+      "handler": "valid-company.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valid-companies/count",
+      "handler": "valid-company.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/valid-companies/:id",
+      "handler": "valid-company.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/valid-companies",
+      "handler": "valid-company.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/valid-companies/:id",
+      "handler": "valid-company.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/valid-companies/:id",
+      "handler": "valid-company.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

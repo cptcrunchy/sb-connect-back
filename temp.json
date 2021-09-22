@@ -1,0 +1,96 @@
+{
+    "isCanceled": false,
+    "_rScore": 0,
+    "_type": "opportunity",
+    "publishDate": "2021-09-09T10:04:56-04:00",
+    "isActive": true,
+    "title": "Convert Bldg 91157 from Storage Warehouse to Testing Lab",
+    "type": {
+      "code": "o",
+      "value": "Solicitation"
+    },
+    "descriptions": [
+      {
+        "lastModifiedDate": "2021-09-09T10:04:56.405-04:00",
+        "content": "<p>****Updated 09&nbsp;September 2021****</p>\n\n<p>Questions and answers Part 2&nbsp;has been attached.</p>\n\n<p></p>\n\n<p>****Updated 07 September 2021****</p>\n\n<p>Amendment 0002 is to:</p>\n\n<p>Incorporate Addendum 1, dated 01 September 21, which revis"
+      }
+    ],
+    "solicitationNumber": "FA441721B0003",
+    "responseDate": "2021-09-14T16:00:00-04:00",
+    "parentNoticeId": "f42de9e850d646d4bc5aee21d3665a81",
+    "award": {
+      "awardee": {
+        "name": null,
+        "duns": null
+      }
+    },
+    "responseTimeZone": "America/Chicago",
+    "modifiedDate": "2021-09-09T10:04:56-04:00",
+    "organizationHierarchy": [
+      {
+        "organizationId": "100000000",
+        "address": {
+          "zip": null,
+          "country": null,
+          "city": null,
+          "streetAddress": null,
+          "streetAddress2": null,
+          "state": null
+        },
+        "level": 1,
+        "name": "DEPT OF DEFENSE",
+        "type": "DEPARTMENT",
+        "status": "active"
+      },
+      {
+        "organizationId": "300000251",
+        "address": {
+          "zip": null,
+          "country": null,
+          "city": null,
+          "streetAddress": null,
+          "streetAddress2": null,
+          "state": null
+        },
+        "level": 2,
+        "name": "DEPT OF THE AIR FORCE",
+        "type": "AGENCY",
+        "status": "active"
+      },
+      {
+        "organizationId": "100006128",
+        "address": {
+          "zip": null,
+          "country": null,
+          "city": null,
+          "streetAddress": null,
+          "streetAddress2": null,
+          "state": null
+        },
+        "level": 3,
+        "name": "AFSOC",
+        "type": "MAJOR COMMAND",
+        "status": "active"
+      },
+      {
+        "organizationId": "100223274",
+        "address": {
+          "zip": "32544-5810",
+          "country": "USA",
+          "city": "HURLBURT FIELD",
+          "streetAddress": "CP  850 884 7602",
+          "streetAddress2": "350 TULLY ST  BLDG 90339",
+          "state": "FL"
+        },
+        "level": 4,
+        "name": "FA4417  1 SOCONS LGC",
+        "type": "OFFICE",
+        "status": "active"
+      }
+    ],
+    "_id": "47d331b1e5e1478a876e8b8e74dd17fa",
+    "responseDateActual": "2021-09-14T15:00:00-05:00",
+    "modifications": {
+      "count": 5
+    }
+  }
