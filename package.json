@@ -13,13 +13,16 @@
     "strapi-provider-email-sendmail": "^3.6.5"
   },
   "dependencies": {
-    "knex": "0.21.18",
+    "file-saver": "^2.0.2",
+    "knex": "^0.95.11",
     "pg": "^8.6.0",
     "pg-connection-string": "^2.4.0",
-    "sqlite3": "5.0.0",
-    "strapi": "3.6.5",
+    "pluralize": "^8.0.0",
+    "sqlite3": "^4.2.0",
+    "strapi": "^3.1.4",
     "strapi-admin": "^3.6.8",
-    "strapi-connector-bookshelf": "3.6.5",
+    "strapi-connector-bookshelf": "^3.5.1",
+    "strapi-helper-plugin": "^3.2.5",
     "strapi-plugin-content-manager": "^3.6.8",
     "strapi-plugin-content-type-builder": "^3.6.8",
     "strapi-plugin-documentation": "^3.6.5",
@@ -36,8 +39,8 @@
     "uuid": "bf770fe2-272d-4902-9a59-704a0cc9ba00"
   },
   "engines": {
-    "node": "14.x",
-    "npm": "^6.0.0"
+    "node": "<=14.17.x",
+    "npm": ">=6.0.0"
   },
   "license": "MIT"
 }
